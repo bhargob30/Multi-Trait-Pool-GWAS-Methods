@@ -30,7 +30,7 @@ library(stabs)
 # 'SNPfrequencies' denote the set of MAFs. MAF of a particular SNP is randomly selected from this set of MAFs.
 
 phenotype=runSimulation(N=2000, P=2, genVar=0.6,
-                        h2s=0.1/0.6, rho=0, delta=0, tNrSNP=10000,
+                        h2s=0.5/0.6, rho=0, delta=0, tNrSNP=10000,
                         cNrSNP=10, SNPfrequencies=c(0.05, 0.1,0.2),
                         pIndependentGenetic = 0.8,
                         pTraitIndependentGenetic = 0.5, seed=16 )
